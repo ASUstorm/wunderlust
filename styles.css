@@ -1,1234 +1,1231 @@
-/* HANNAH HAUAN */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-/* Reset (Meyer) */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,
-video {
-    margin        : 0;
-    padding       : 0;
-    border        : 0;
-    font-size     : 100%;
-    font          : inherit;
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+    line-height             : 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+
+/**
+   * Remove the margin in all browsers.
+   */
+
+body {
+    margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+
+main {
+    display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+
+h1 {
+    font-size: 2em;
+    margin   : 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+
+hr {
+    box-sizing: content-box;
+    /* 1 */
+    height    : 0;
+    /* 1 */
+    overflow  : visible;
+    /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size  : 1em;
+    /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+
+a {
+    background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+
+abbr[title] {
+    border-bottom          : none;
+    /* 1 */
+    text-decoration        : underline;
+    /* 2 */
+    -webkit-text-decoration: underline dotted;
+    text-decoration        : underline dotted;
+    /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size  : 1em;
+    /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+
+small {
+    font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+
+sub,
+sup {
+    font-size     : 75%;
+    line-height   : 0;
+    position      : relative;
     vertical-align: baseline;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+
+img {
+    border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size  : 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin     : 0;
+    /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+
+button,
+input {
+    /* 1 */
+    overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding     : 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+
+legend {
+    box-sizing : border-box;
+    /* 1 */
+    color      : inherit;
+    /* 2 */
+    display    : table;
+    /* 1 */
+    max-width  : 100%;
+    /* 1 */
+    padding    : 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+
+progress {
+    vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding   : 0;
+    /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset    : -2px;
+    /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font              : inherit;
+    /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+
+details {
     display: block;
 }
 
-body {
-    line-height: 1;
+/*
+   * Add the correct display in all browsers.
+   */
+
+summary {
+    display: list-item;
 }
 
-ol,
-ul {
-    list-style: none;
-}
+/* Misc
+     ========================================================================== */
 
-blockquote,
-q {
-    quotes: none;
-}
+/**
+   * Add the correct display in IE 10+.
+   */
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing : 0;
-}
-
-
-/* VARIABLES */
-:root {
-    --fonts       : Molle, cursive;
-    --fonts2      : Montserrat, sans-serif;
-    --yellow      : #f6d64a;
-    --turq        : #55bcd5;
-    --purple      : #9b26b0;
-    --blue        : #499bd2;
-    --light-blue  : #96d0ff;
-    --dark-gray   : #222;
-    --light-gray  : #eaeaea;
-    --white       : #fff;
-    --black       : #000;
-    --radio-size  : 56px;
-    --radio-border: 4px;
-}
-
-
-/* BYPASS BLOCKS */
-#skip {
-    background   : var(--turq);
-    color        : var(--black);
-    font-weight  : 700;
-    left         : 50%;
-    padding      : 8px;
-    border-radius: 3px;
-    outline      : 2px solid var(--turq);
-    position     : absolute;
-    transform    : translateY(-170%);
-    transition   : transform .3s;
-}
-
-#skip a {
-    color: var(--turq);
-}
-
-#skip:focus {
-    transform: translateY(0%);
-    outline  : 2px solid var(--black);
-    color    : var(--turq);
-}
-
-#skip:focus-within {
-    transform: translateY(0%);
-    color    : var(--black);
-}
-
-
-/* HEADER */
-header {
-    display              : grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows   : auto auto auto;
-    align-items          : center;
-    gap                  : .75rem 1rem;
-    padding              : 1rem 1.5rem;
-    margin               : 0 auto;
-    max-width            : 480px;
-    min-width            : 320px;
-    background           : linear-gradient(180deg, var(--turq) 0%, rgba(255, 255, 255, 1) 100%);
-}
-
-#logo {
-    grid-column: 1;
-    grid-row   : 1;
-}
-
-#logo img {
-    width  : 75%;
-    height : auto;
-    display: block;
-}
-
-
-/* MENU */
-#menu-toggle {
-    grid-column: 2;
-    grid-row   : 1;
-    position   : relative;
-    width      : 100%;
-}
-
-#menu-toggle input[type="checkbox"] {
+template {
     display: none;
 }
 
-#menu-toggle label {
-    background   : var(--yellow);
-    color        : var(--black);
-    font-family  : var(--fonts2);
-    font-weight  : 600;
-    padding      : .85rem 1rem;
-    font-size    : 1rem;
-    border-radius: 0;
-    text-align   : center;
-    cursor       : pointer;
-    display      : block;
-    width        : 100%;
+/**
+   * Add the correct display in IE 10.
+   */
+
+[hidden] {
+    display: none;
 }
 
-#menu-toggle ul {
-    position  : fixed;
-    top       : 0;
-    left      : 0;
-    right     : 0;
-    width     : 100vw;
-    background: var(--turq);
-    overflow  : hidden;
-    padding   : 0;
-    margin    : 0;
-    transform : translateY(-100%);
-    transition: transform .3s ease;
-    z-index   : 100;
+/* --------------- CUSTOM STYLES BY ME - SOLUTION FILE --------------- */
+
+/* ---------- GLOBAL/MOBILE STYLES ---------- */
+/* ---------- ROOT STYLES ---------- */
+:root {
+    --sea-blue    : #55BCD5;
+    --deep-blue   : #499BD2;
+    --purple      : #9B26B0;
+    --white       : #fff;
+    --yellow      : #F6D64A;
+    --light-gray  : #eaeaea;
+    --dark-gray   : #222;
+    font-size     : 16px;
+    /* 16px = 12pt */
+    --heading-font: "Molle", sans-serif;
+    --body-font   : "Montserrat", Helvetica, Arial, sans-serif;
+    box-sizing    : border-box;
 }
 
-#toggle:checked+label {
-    position  : fixed;
-    top       : 0;
-    left      : 0;
-    right     : 0;
-    width     : 100vw;
-    background: #222;
-    color     : #fff;
-    z-index   : 101;
-    cursor    : pointer;
+/* ---------- HEADING STYLES ---------- */
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    font-weight: normal;
+    font-style : italic;
 }
 
-#toggle:checked+label+ul {
-    transform  : translateY(0%);
-    padding-top: 3.25rem;
+h1 {
+    grid-column : 1/-1;
+    margin      : 0.5rem 0 0 0;
+    padding-left: 1.5rem;
 }
 
-#menu-toggle ul li {
-    border-top: 1px solid var(--black);
+h2 {
+    font-size   : 1.75rem;
+    margin      : 0;
+    padding-left: 1rem;
 }
 
-#menu-toggle ul li a {
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    padding        : 2.25rem 1rem;
-    text-align     : center;
-    font-family    : var(--fonts2);
-    font-weight    : 600;
-    text-transform : uppercase;
-    letter-spacing : .02em;
-    color          : var(--black);
-    background     : var(--turq);
-    text-decoration: none;
-    transition     : background-color .2s ease, color .2s ease;
+h3 {
+    font-size : 1.75rem;
+    margin-top: 1rem;
 }
 
-#menu-toggle ul li a:hover,
-#menu-toggle ul li a:focus {
-    background: var(--light-blue);
-
+h4 {
+    font-size     : 1.25rem;
+    font-family   : var(--body-font);
+    font-weight   : bold;
+    margin        : 0.25rem 0;
+    text-transform: uppercase;
+    text-align    : center;
 }
 
-
-header h1 {
-    grid-column: 1 / -1;
-    grid-row   : 2;
-    font-family: var(--fonts);
-    font-size  : 3.5rem;
-    line-height: 1.1;
-    margin     : .25rem 0 0;
+#testimonials h4 {
+    font-size: 1.5rem;
 }
 
-header p {
-    grid-column: 1 / -1;
-    grid-row   : 3;
-    font-family: var(--fonts2);
-    color      : var(--dark-gray);
-    font-size  : 1.2rem;
-    line-height: 1.6;
-    margin     : 0;
+#about h4 {
+    font-size: 1.1rem;
 }
 
+#contact h3 {
+    margin-bottom: 1rem;
+}
+
+/* ---------- HIDDEN HEADING STYLES ---------- */
+/* FROM: https://webaim.org/techniques/css/invisiblecontent/ */
 .sr-only {
     position: absolute;
-    left    : -1000px;
+    left    : -10000px;
     top     : auto;
     width   : 1px;
     height  : 1px;
     overflow: hidden;
 }
 
-
-/* MAIN */
-main {
-    color      : var(--dark-gray);
-    font-family: var(--fonts2);
-    padding    : 1rem 1.5rem;
-    margin     : 0 auto;
-}
-
-article {
-    max-width  : 480px;
-    font-family: var(--fonts2);
-    font-size  : .9rem;
-    line-height: 1.6;
-}
-h3{
-    font-family   : var(--fonts);
-    font-weight   : 700;
-    letter-spacing: .05rem;
-    font-size     : 2.5rem;
-    color         : var(--black);
-    margin-left   : 10%;
-}
-
-/* INTRO IMAGES */
-#img-grid {
-    display       : flex;
-    flex-direction: column;
-    gap           : 1rem;
-}
-
-#img-grid img,
-#img-grid picture,
-#img-grid picture img {
-    width      : 100vw;
-    max-width  : none;
-    height     : auto;
+/* ---------- LINK STYLES ---------- */
+a {
     display    : block;
-    object-fit : cover;
-    margin-left: calc(-50vw + 50%);
+    padding    : 1rem;
+    font-family: var(--body-font);
 }
 
-#intro h2 {
-    font-family: var(--fonts);
-    font-size  : 2.5rem;
+nav a {
+    text-transform: uppercase;
+    text-align    : center;
+    font-weight   : bold;
+    padding       : 1.5rem 0;
 }
 
-#intro p {
+#logo {
+    padding: 0.25rem;
+}
+
+#plan a {
+    padding  : 0;
+    min-width: 50%;
+    max-width: 200px;
+    margin   : 0 auto;
+}
+
+/* ---------- LINK HOVER STYLES ---------- */
+@media (hover: hover) {
+    #menu-toggle a:hover {
+        background-color: var(--yellow);
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* ---------- TEXT STYLES ---------- */
+header p {
+    grid-column: 1/-1;
+    padding    : 0.5rem 1.5rem 1rem 1.5rem;
+    font-size  : 1.15rem;
+}
+
+p,
+q {
+    font-family: var(--body-font);
+    max-width  : 75ch;
+}
+
+p {
     font-size  : 1rem;
-    line-height: 2.2rem;
-    font-weight: 300;
-}
-
-
-/* PLAN YOUR TRIP */
-
-#plan {
-    background-color: var(--yellow);
-    width           : 100vw;
-    margin-left     : calc(-50vw + 50%);
-    padding         : 1rem 1rem 1.5rem;
-}
-
-
-#plan>div>section {
-    box-sizing      : border-box;
-    background-color: var(--turq);
-    border          : 3px solid var(--white);
-    border-radius   : 10px;
-    padding         : .75rem;
-    width           : 400px;
-    height          : 400px;
-    max-width       : 90vw;
-    aspect-ratio    : 1 / 1;
-    display         : grid;
-    align-items     : start;
-    text-align      : center;
-
-}
-
-#plan {
-    background-color: var(--yellow);
-    width           : 100vw;
-    margin-top      : 2rem;
-    padding         : 1.25rem 1.5rem 2rem;
-}
-
-#plan h3 {
-    font-family   : var(--fonts);
-    font-weight   : 700;
-    letter-spacing: .05rem;
-    font-size     : 2.5rem;
-    color         : var(--black);
-    margin        : .2rem 0 .35rem;
-}
-
-#plan>div {
-    display       : flex;
-    flex-direction: column;
-    gap           : 1.25rem;
-    padding       : 3rem;
-    align-items   : center;
-}
-
-#plan>div>section {
-    background-color: var(--turq);
-    border          : 3px solid #fff;
-    border-radius   : 10px;
-    padding         : .75rem;
-    text-align      : center;
-    aspect-ratio    : 1 / 1;
-    display         : grid;
-    height          : 20rem;
-    width           : 20rem;
-}
-
-#plan>div>section h4 {
-    font-family   : var(--fonts2);
-    font-weight   : 700;
-    text-transform: uppercase;
-    letter-spacing: .05rem;
-    font-size     : 1.8rem;
-    color         : var(--black);
-    margin        : .2rem 0 .35rem;
-}
-
-#plan>div>section a {
-    display    : grid;
-    place-items: center;
-}
-
-#plan>div>section img {
-    display   : block;
-    width     : 65%;
-    height    : 65%;
-    object-fit: contain;
-}
-
-
-/* TESTIMONIALS */
-#testimonials {
-    display: grid;
-    padding: 2rem;
-}
-
-#testimonials section {
-    display       : flex;
-    flex-direction: column;
-    place-items   : center;
-    gap           : 0;
-}
-
-#testimonials h3 {
-    font-family   : var(--fonts);
-    font-weight   : 700;
-    letter-spacing: .05rem;
-    font-size     : 2.5rem;
-    color         : var(--black);
-    margin        : 0;
-}
-
-#testimonials section h4 {
-    font-size     : 2rem;
-    text-transform: uppercase;
-    font-weight   : 600;
-    margin        : 0;
-}
-
-#testimonials section p {
-    font-family: var(--fonts2);
-    font-weight: 100;
-    font-size  : 1.2rem;
-    line-height: 1.5;
+    line-height: 1.5rem;
+    padding    : 1rem;
     margin     : 0;
-    color      : var(--dark-gray);
 }
 
 q {
-    font-family: var(--fonts2);
-    font-weight: 300;
+    display    : block;
     font-style : italic;
-    text-align : center;
-    font-size  : 1.2rem;
-    line-height: 1.6rem;
-    margin     : 0;
+    font-size  : 1.25rem;
+    line-height: 1.5rem;
 }
 
-
-/* ABOUT */
-#about {
-    background-color: var(--blue);
-    width           : 100%;
-    margin-left     : -1.5rem;
-    margin-right    : -1.5rem;
-    padding         : 2rem 1.5rem;
+#testimonials p,
+#testimonials q {
+    text-align: center;
+    padding   : 0;
 }
 
-#about h3 {
-    font-family: var(--fonts);
-    font-weight: 700;
-    font-size  : 2.5rem;
-    color      : var(--black);
-    margin     : .2rem 0 .35rem;
+#testimonials p {
+    margin: 0.25rem 0;
 }
 
-#about>div {
-    display              : grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap                  : 2rem;
-    padding              : 2rem;
-    text-align           : center;
-}
-
-#about section {
-    display       : flex;
-    flex-direction: column;
-    align-items   : center;
-    color         : var(--black);
-}
-
-#about img {
-    width        : 80px;
-    height       : 80px;
-    margin-bottom: 1rem;
-}
-
-#about h4 {
-    font-family   : var(--fonts2);
-    font-size     : 1rem;
-    text-transform: uppercase;
-    font-weight   : 600;
-    margin        : .25rem 0;
+#testimonials q {
+    margin: 0.5rem 0;
 }
 
 #about p {
-    font-family: var(--fonts2);
-    font-size  : .85rem;
-    color      : var(--black);
-    margin     : 0;
-}
-
-
-/* CONTACT */
-#contact h3 {
-    font-family: var(--fonts);
-    font-weight: 700;
-    font-size  : 2.5rem;
-    color      : var(--black);
-    margin     : .2rem 0 .35rem;
-}
-
-.required {
-    color      : var(--purple);
-    margin-left: .25rem;
-}
-
-
-#names input {
-    height     : 50px;
-    width      : 90%;
-    border     : 3px solid var(--purple);
-    padding    : .75rem;
-    font-family: var(--fonts2);
-    color      : var(--black);
-    font-size  : 1rem;
-}
-
-#nums input {
-    border     : 3px solid var(--purple);
-    padding    : .75rem;
-    font-family: var(--fonts2);
-    color      : var(--black);
-    font-size  : 1rem;
-}
-
-#destinations select {
-    width: 100%;
-}
-
-.custom-select {
-    position: relative;
-    width   : 90%;
-}
-
-.custom-select select {
-    box-sizing        : border-box;
-    appearance        : none;
-    -webkit-appearance: none;
-    -moz-appearance   : none;
-    width             : 100%;
-    height            : 50px;
-    padding           : .75rem 3rem .75rem .75rem;
-    border            : 3px solid var(--purple);
-    font-family       : var(--fonts2);
-    font-size         : 1rem;
-    color             : var(--black);
-    background        : var(--white);
-}
-
-.custom-select::after {
-    content          : '';
-    position         : absolute;
-    top              : 50%;
-    right            : 1rem;
-    width            : 2rem;
-    height           : 2rem;
-    transform        : translateY(-50%);
-    pointer-events   : none;
-    background-repeat: no-repeat;
-    background-size  : 100% 100%;
-    background-image : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239b26b0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12l6 6 10-12'/%3E%3C/svg%3E");
-}
-
-#mySubmit,
-#submitButton {
-    width         : 90%;
-    height        : 80px;
-    padding       : .75rem;
-    background    : var(--purple);
-    color         : var(--white);
-    text-transform: uppercase;
-    border        : none;
-    font-family   : var(--fonts2);
-    cursor        : pointer;
-    font-weight   : 500;
-    font-size     : 1rem;
-    margin-top    : 1rem;
+    font-size : 1rem;
+    text-align: center;
+    padding   : 0.5rem 1rem 1rem 1rem;
 }
 
 .form-required {
-    font-family: var(--fonts2);
-    font-size  : .9rem;
+    font-family: var(--body-font);
+    font-weight: normal;
     font-style : italic;
+    font-size  : 1rem;
 }
 
+.required {
+    font-family: var(--body-font);
+    font-size  : 1.25rem;
+    color      : var(--purple);
+}
+
+/* ---------- IMAGE STYLES ---------- */
+img,
+picture {
+    display  : block;
+    max-width: 100%;
+}
+
+header img {
+    width  : 100px;
+    padding: 0.5rem;
+}
+
+#img-grid img {
+    margin   : 1rem auto;
+    width    : 100%;
+    max-width: 385px;
+}
+
+#plan img {
+    min-width: 50%;
+    max-width: 200px;
+}
+
+#testimonials img {
+    margin   : 0 auto 1rem auto;
+    max-width: 200px;
+}
+
+#about img {
+    height    : 80px;
+    max-height: 150px;
+    margin    : 0 auto 1rem auto;
+}
+
+/* ---------- FORM STYLES ---------- */
 form {
-    max-width  : 480px;
-    margin     : 0 auto 3rem;
-    font-family: var(--fonts2);
-    color      : var(--black);
+    width    : 100%;
+    max-width: 500px;
+    margin   : 0 auto;
 }
 
-h3 {
-    font-family: var(--fonts);
-    font-size  : 2.2rem;
-    margin     : 0 0 .25rem;
+input,
+label,
+legend,
+select,
+option {
+    font-family: var(--body-font);
+    display    : block;
+    width      : 90%;
 }
 
-h3+form,
-h3+*+form {
-    margin-top: .5rem;
-}
-
-form label {
-    display       : block;
-    font-weight   : 700;
-    text-transform: uppercase;
-    font-size     : 1rem;
-    letter-spacing: .02em;
-    margin        : 0;
-}
-
-form label span {
-    align-items: center;
-    color      : var(--black);
-    margin-left: .25rem;
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="tel"],
-form select {
-    width        : 100%;
-    height       : auto;
-    border       : 3px solid var(--purple);
-    border-radius: 0;
-    font         : 400 1rem var(--fonts2);
-    color        : var(--black);
-    background   : var(--white);
-    box-sizing   : border-box;
-}
-
-form input::placeholder {
-    color: var(--black);
-}
-
-input[type="radio"] {
-    -webkit-appearance: none;
-    appearance        : none;
-    background-color  : #fff;
-    margin            : 0;
-    font              : inherit;
-    color             : var(--white);
-    border-radius     : 50%;
-    display           : grid;
-    place-content     : center;
-}
-
-input[type="radio"]::before {
-    content      : "\2022";
-    width        : 1em;
-    height       : 1em;
-    border-radius: 50%;
-    transform    : scale(0);
-    transition   : 120ms transform ease-in-out;
-    box-shadow   : inset 1em 1em var(--purple);
-}
-
-input[type="radio"]:checked::before {
-    transform: scale(1);
-}
-
+label,
 legend {
-    font-family   : var(--fonts2);
-    font-weight   : 700;
-    font-size     : 1rem;
-    color         : var(--black);
-    margin-bottom : .5rem;
+    font-weight   : bold;
+    margin        : 1rem 0 0.25rem 0;
     text-transform: uppercase;
+}
+
+input::-webkit-input-placeholder {
+    color: var(--dark-gray);
+}
+
+input::-moz-placeholder {
+    color: var(--dark-gray);
+}
+
+input:-ms-input-placeholder {
+    color: var(--dark-gray);
+}
+
+input::-ms-input-placeholder {
+    color: var(--dark-gray);
+}
+
+input::placeholder {
+    color: var(--dark-gray);
+}
+
+/* custom input styles from https://moderncss.dev/custom-css-styles-for-form-inputs-and-textareas/ */
+input {
+    padding         : 0.25rem 0.5rem;
+    background-color: var(--white);
+    border          : 2px solid var(--purple);
+    border-radius   : 0;
+    height          : 50px;
+    margin          : 0 auto;
+    outline         : none;
+}
+
+/* reset select to add custom styles from: https://moderncss.dev/custom-select-styles-with-pure-css/ */
+select {
+    -webkit-appearance: none;
+    -moz-appearance   : none;
+    appearance        : none;
+    background-color  : transparent;
+    border            : none;
+    padding           : 0 1rem 0 0;
+    margin            : 0;
+    outline           : none;
+    width             : 100%;
+    height            : 100%;
+}
+
+.custom-select {
+    height             : 50px;
+    border             : 2px solid var(--purple);
+    padding            : 0.25rem 0.5rem;
+    background-color   : var(--white);
+    width              : 90%;
+    margin             : 0 auto;
+    display            : grid;
+    grid-template-areas: "select";
+    align-items        : center;
+    position           : relative;
+}
+
+select,
+.custom-select:after {
+    grid-area: select;
+}
+
+.custom-select::after {
+    content          : "";
+    width            : 2rem;
+    height           : 2rem;
+    margin-top       : 1rem;
+    margin-right     : 1rem;
+    background-color : var(--purple);
+    -webkit-clip-path: polygon(0% 0%, 50% 40%, 100% 0%, 100% 10%, 50% 50%, 0% 10%);
+    clip-path        : polygon(0% 0%, 50% 40%, 100% 0%, 100% 10%, 50% 50%, 0% 10%);
+    justify-self     : end;
+}
+
+select:focus+.focus {
+    position  : absolute;
+    top       : -1px;
+    left      : -1px;
+    right     : -1px;
+    bottom    : -1px;
+    border    : 2px solid var(--deep-blue);
+    box-shadow: 0 0 0 2px #555;
+    outline   : 3px solid transparent;
+}
+
+option {
+    color: var(--dark-gray);
+}
+
+input:focus {
+    border-color: var(--deep-blue);
+    box-shadow  : 0 0 0 2px #555;
+    outline     : 3px solid transparent;
 }
 
 fieldset {
-    margin-top: 1.5rem;
-    width     : 90%;
+    padding   : 0;
+    margin-top: 1rem;
 }
 
 fieldset label {
-    display    : flex;
-    align-items: center;
-    gap        : 1rem;
-    margin     : 0 0 1rem;
+    display              : grid;
+    grid-template-columns: -webkit-min-content auto;
+    grid-template-columns: min-content auto;
+    gap                  : 0.5rem;
+    align-items          : center;
 }
 
-/* FOOTER */
+/* custom radio button styles from https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
+input[type=radio] {
+    opacity: 0;
+    width  : 0;
+    height : 0;
+}
+
+.radio-input {
+    display: flex;
+}
+
+.radio-input input:checked+.radio-control {
+    background: radial-gradient(var(--purple) 50%, var(--white) 51%);
+}
+
+.radio-input input:focus+.radio-control {
+    box-shadow: 0 0 0 0.35em var(--deep-blue);
+}
+
+.radio-control {
+    display      : block;
+    width        : 50px;
+    height       : 50px;
+    border-radius: 50%;
+    border       : 2px solid var(--purple);
+}
+
+.radio-label {
+    color         : var(--dark-gray);
+    text-transform: none;
+    font-weight   : normal;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset label {
+    padding-left: 1.5rem;
+}
+
+form span {
+    color: var(--purple);
+}
+
+input[type=submit] {
+    padding         : 1rem;
+    background-color: var(--purple);
+    color           : var(--white);
+    width           : 97%;
+    margin          : 1rem auto;
+    text-transform  : uppercase;
+}
+
+/* ---------- CONTAINER STYLES ---------- */
+#plan,
+#testimonials,
+#about,
+#contact {
+    padding: 1rem;
+    width  : calc(100% - 2rem);
+}
+
+#plan {
+    background-color: var(--yellow);
+    padding-bottom  : 2rem;
+}
+
+#plan section {
+    background-color: var(--sea-blue);
+    border          : 3px solid var(--white);
+    border-radius   : 5%;
+    padding         : 0.5rem;
+    width           : 90%;
+    max-width       : 350px;
+    margin          : 1rem auto;
+}
+
+#testimonials section {
+    padding: 1rem;
+}
+
+#about {
+    padding         : 1rem;
+    background-color: var(--deep-blue);
+}
+
+#about div {
+    display              : grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ---------- HEADER STYLES ---------- */
+header {
+    /* Linear Gradient syntax from https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient() */
+    background           : linear-gradient(var(--sea-blue), var(--white));
+    display              : grid;
+    grid-template-columns: 1fr 3fr;
+    padding-bottom       : 2rem;
+}
+
+/* ---------- MOBILE NAV STYLES ---------- */
+nav {
+    grid-column : 2/-1;
+    grid-row    : 1/2;
+    margin      : 1rem 0;
+    width       : 90%;
+    max-width   : 350px;
+    justify-self: end;
+}
+
+#menu-toggle {
+    display            : block;
+    /* position        : relative;
+    top                : 50px;
+    right              : 0;
+    z-index            : 1; */
+    grid-column        : 2/-1;
+    grid-row           : 1/2;
+    justify-self       : end;
+    margin             : 0;
+    width              : 100%;
+    background-color   : var(--yellow);
+    -webkit-user-select: none;
+    -moz-user-select   : none;
+    -ms-user-select    : none;
+    user-select        : none;
+    justify-self       : end;
+}
+
+#menu-toggle a {
+    text-decoration: none;
+    color          : var(--dark-gray);
+}
+
+#menu-toggle input {
+    display : block;
+    width   : 30px;
+    height  : 30px;
+    position: absolute;
+    top     : -7px;
+    left    : -5px;
+    padding : 0;
+    cursor  : pointer;
+    opacity : 0;
+    z-index : 2;
+}
+
+#menu-toggle label {
+    position  : relative;
+    display   : block;
+    width     : 100%;
+    text-align: center;
+    padding   : 1rem 0;
+    margin    : 0;
+}
+
+#menu-toggle input:checked+label {
+    background-color: var(--dark-gray);
+    color           : var(--white);
+}
+
+nav ul {
+    position        : absolute;
+    width           : 100vw;
+    margin          : -150vw 0 0 100vw;
+    padding         : 2.5rem 0 0 0;
+    background-color: var(--sea-blue);
+    list-style-type : none;
+}
+
+nav li {
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+#menu-toggle input:checked~label {
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    width   : 100vw;
+    height  : 1.5rem;
+    z-index : 2;
+    margin  : 0;
+    padding : 1rem 0 0 0;
+}
+
+#menu-toggle input:checked~ul {
+    left: -100vw;
+    top : 150vw;
+}
+
+/* ---------- SKIP LINK STYLES ---------- */
+/* FROM: https://webaim.org/techniques/css/invisiblecontent/ */
+#skip {
+    position: absolute;
+    left    : -10000px;
+    top     : auto;
+    width   : 1px;
+    height  : 1px;
+    overflow: hidden;
+}
+
+#skip:focus {
+    position: static;
+    width   : auto;
+    height  : auto;
+}
+
+/* ---------- MAIN STYLES ---------- */
+
+
+/* ---------- FOOTER STYLES ---------- */
 footer {
-    display        : flex;
-    flex-direction : column;
-    text-align     : center;
-    background     : var(--light-gray);
-    color          : var(--black);
-    padding        : 2rem;
-    margin         : 0;
-    font-family    : var(--fonts2);
-    font-size      : .9rem;
-    gap            : 1rem;
+    background-color: var(--light-gray);
+    text-align      : center;
+    font-size       : 1rem;
+    padding         : 1rem;
 }
 
 footer p {
-    margin   : .5rem 0;
-    font-size: .9rem;
+    padding  : 0;
+    font-size: 1rem;
 }
 
 footer a {
+    color          : var(--dark-gray);
     text-decoration: none;
-    color          : var(--black);
 }
 
-
-/* MEDIUM >550PX */
-@media (min-width: 700px) {
-
-    header {
-        max-width            : 960px;
-        min-width            : 750px;
-        margin               : 0 auto;
-        padding              : 2rem 1.5rem;
-        display              : grid;
-        grid-template-columns: 120px 1fr;
-        grid-template-rows   : auto auto auto;
-        gap                  : .25rem 1.25rem;
-        align-items          : center;
-        background           : linear-gradient(180deg, var(--turq) 0%, rgba(255, 255, 255, 1) 100%);
-    }
-
-    #logo {
-        grid-column: 1;
-        grid-row   : 1 / span 3;
-    }
-
-    #logo img {
-        width    : 75%;
-        height   : auto;
-        max-width: 150px;
-        display  : block;
-    }
-
-    header h1 {
-        grid-column: 2 !important;
-        grid-row   : 1;
-        margin     : 0;
-        text-align : left;
-        font-size  : 3rem;
-    }
-
-    header p {
-        grid-column: 2;
-        grid-row   : 2;
-        margin     : 0 0 .75rem 0;
-        text-align : left;
-        max-width  : 46ch;
-    }
-
-    #menu-toggle {
-        grid-column: 2;
-        grid-row   : 3;
-        width      : 100%;
-    }
-
-    #menu-toggle label {
-        display: none !important;
-    }
-
-    #menu-toggle ul {
-        position  : static !important;
-        transform : none !important;
-        width     : auto;
-        background: transparent;
-        padding   : 0;
-        margin    : 0;
-        display   : flex;
-        gap       : 1rem;
-    }
-
-    #menu-toggle ul li {
-        border-top: 0;
-    }
-
-    #menu-toggle ul li a {
-        display        : inline-flex;
-        align-items    : center;
-        justify-content: center;
-        padding        : .75rem 1rem;
-        text-transform : uppercase;
-        font-family    : var(--fonts2);
-        font-weight    : 700;
-        letter-spacing : .02em;
-        text-decoration: none;
-        color          : var(--black);
-        background     : var(--white);
-        border         : 1px solid rgba(0, 0, 0, .08);
-        box-shadow     : 0 2px 0 rgba(0, 0, 0, .06);
-        border-radius  : 4px;
-    }
-
-    #menu-toggle ul li.active a {
-        background: var(--yellow);
-    }
-
-    #toggle:checked+label {
-        position  : static;
-        width     : auto;
-        background: transparent;
-        color     : inherit;
-    }
-
-    #toggle:checked+label+ul {
-        padding-top: 0;
-    }
-
-    article {
-        max-width: 960px;
-        margin   : 0 auto;
-    }
-
-    #intro h2 {
-        font-size  : 3rem;
-        line-height: 1.1;
-        margin     : 1rem 0 .5rem;
-    }
+/* ---------- MEDIUM SCREEN STYLES ---------- */
+@media screen and (min-width: 650px) {
 
     #intro p {
-        font-size    : 1.05rem;
-        line-height  : 1.9;
-        max-width    : 70ch;
-        margin-bottom: 1rem;
+        font-size  : 1.25rem;
+        line-height: 1.75;
     }
 
     #img-grid {
         display              : grid;
         grid-template-columns: 1fr 1fr;
         gap                  : 1rem;
+        padding              : 1rem;
     }
 
-    #img-grid img,
-    #img-grid picture,
-    #img-grid picture img {
+    #img-grid picture {
+        grid-column: 1/-1;
         width      : 100%;
-        max-width  : 100%;
-        height     : auto;
-        object-fit : cover;
-        margin-left: 0;
     }
 
-    #img-grid> :nth-child(1) {
-        grid-column: 1;
+    picture img,
+    #img-grid img {
+        max-width: 100%;
+        margin   : 0 auto;
     }
 
-    #img-grid> :nth-child(2) {
-        grid-column: 2;
-    }
-
-    #img-grid> :nth-child(3) {
-        grid-column: 1 / -1;
-    }
-
-    #plan>div {
+    #plan div {
         display              : grid;
         grid-template-columns: 1fr 1fr;
-        gap                  : 1.25rem;
-        max-width            : 720px;
+        gap                  : 1rem;
+        max-width            : 700px;
         margin               : 0 auto;
     }
 
-    #plan>div>section h4 {
-        font-size     : 1.5rem;
-        letter-spacing: .08em;
+    #plan section {
+        margin: 0 auto;
     }
 
-    #testimonials {
-        display: block;
-        padding: 2rem 0 2.5rem;
-    }
-
-    #testimonials>div {
+    #testimonials div {
         display              : grid;
         grid-template-columns: 1fr 1fr;
-        max-width            : 720px;
-        margin               : 0 auto;
-    }
-
-    #testimonials>div>section {
-        display      : grid;
-        justify-items: center;
-        text-align   : center;
-        gap          : .5rem;
-    }
-
-    #testimonials>div>section img {
-        width        : 150px;
-        height       : 150px;
-        border-radius: 50%;
-        object-fit   : cover;
-        border       : 4px solid var(--white);
-        margin-bottom: .2rem;
-    }
-
-    #testimonials>div>section h4 {
-        font-size     : 1.15rem;
-        text-transform: uppercase;
-        letter-spacing: .06em;
-        font-weight   : 700;
-        margin        : 0;
-        padding       : 0;
-    }
-
-    #testimonials>div>section p {
-        font-size  : .95rem;
-        font-weight: 400;
-        color      : var(--black);
-        margin     : 0;
-    }
-
-    #testimonials q {
-        font-style : italic;
-        font-weight: 300;
-        font-size  : .95rem;
-        line-height: 1.5;
-        color      : var(--black);
-        max-width  : 34ch;
-        margin     : 0;
-        padding    : 0;
-    }
-
-    /* ABOUT */
-
-    #about>div {
-        max-width            : 100%;
-        margin               : 0 auto;
-        display              : grid;
-        grid-template-columns: repeat(4, 1fr);
-        padding              : 1rem 0;
-        text-align           : center;
-    }
-
-    #about img {
-        width        : 100px;
-        height       : 100px;
-        margin-bottom: .75rem;
-    }
-
-    #about h4 {
-        font-size: .95rem;
-    }
-
-    #about p {
-        font-size: .9rem;
+        grid-gap             : 1rem;
     }
 
     fieldset {
-        display        : flex;
-        max-width      : 100%;
-        align-items    : center;
-        justify-content: space-between;
+        display              : grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    fieldset legend {
+        grid-column: 1/-1;
     }
 
     fieldset label {
-        display    : flex;
-        align-items: center;
-        gap        : 1rem;
-        margin     : 0 0 1rem;
-    }
-
-    footer {
-        flex-direction : row;
-        align-items    : center;
-        justify-content: space-around;
-        padding        : 1.5rem 8rem;
-    }
-
-    article {
-        display       : flex;
-        flex-direction: column;
-    }
-}
-
-
-
-
-/* LARGE SCREEN SIZE >980px */
-
-@media (min-width: 980px) {
-
-    header {
-        max-width            : 100vw;
-        margin               : 0;
-        padding              : 2.25rem 2rem;
-        display              : grid;
-        grid-template-columns: 140px 1fr auto;
-        grid-template-rows   : auto auto;
-        gap                  : .5rem 2rem;
-        position             : relative;
-        background           : none;
-    }
-
-    header::before {
-        content   : "";
-        position  : absolute;
-        z-index   : -1;
-        inset     : 0;
-        left      : 50%;
-        width     : 100vw;
-        transform : translateX(-50%);
-        background: linear-gradient(180deg, var(--turq) 0%, rgba(255, 255, 255, 1) 100%);
-    }
-
-    #logo img {
-        min-width: 200px;
-    }
-
-    header h1 {
-        grid-column: 2;
-        grid-row   : 1;
-        font-size  : 3.6rem;
-        margin     : .1rem 0 0;
-        text-align : left;
-    }
-
-    header p {
-        grid-column: 2;
-        grid-row   : 2;
-        font-size  : 1.15rem;
-        max-width  : 52ch;
-        margin     : .25rem 0 0;
-        text-align : left;
-    }
-
-    #menu-toggle ul li a {
-        border-radius : 4px;
-        font-weight   : 700;
-        text-transform: uppercase;
-    }
-
-    article {
-        max-width: 1200px;
-    }
-
-    #intro {
-        display              : grid;
-        grid-template-columns: 460px 1fr;
-        gap                  : 2rem 2.25rem;
-        align-items          : start;
-    }
-
-    #intro h2 {
-        grid-column: 1;
-        margin     : 1rem 0 .5rem;
-    }
-
-    #intro p {
-        grid-column: 1;
-        max-width  : 46ch;
-    }
-
-    #img-grid {
-        grid-column          : 2;
-        display              : grid;
-        grid-template-columns: 1fr 1fr;
-        gap                  : .9rem 1.1rem;
-    }
-
-    #img-grid img,
-    #img-grid picture,
-    #img-grid picture img {
-        width      : 100%;
-        max-width  : 100%;
-        height     : auto;
-        object-fit : cover;
-        margin-left: 0;
-    }
-
-    #img-grid> :nth-child(1) {
-        grid-column: 1;
-    }
-
-    #img-grid> :nth-child(2) {
-        grid-column: 2;
-    }
-
-    #img-grid> :nth-child(3) {
-        grid-column: 1 / -1;
-    }
-
-    /* PLAN YOUR TRIP */
-
-    #plan>div {
-        min-width            : 1000px;
+        grid-template-columns: -webkit-min-content -webkit-max-content;
+        grid-template-columns: min-content max-content;
         margin               : 0 auto;
-        display              : grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap                  : 1.25rem 1.5rem;
-        justify-content      : center;
-    }
-
-    #plan>div>section {
-        aspect-ratio      : 1 / 1;
-        padding           : .9rem;
-        display           : grid;
-        grid-template-rows: auto 1fr;
-        align-items       : start;
-    }
-
-    #plan>div>section h4 {
-        font-size     : 1rem;
-        letter-spacing: .08em;
-        margin        : .2rem 0 .35rem;
-        text-transform: uppercase;
-    }
-
-    #plan>div>section a {
-        place-items: center;
-    }
-
-    #plan>div>section img {
-        width     : 65%;
-        height    : 65%;
-        object-fit: contain;
-    }
-
-    /* TESTIMONIALS */
-
-    #testimonials {
-        padding: 2.5rem 0 3rem;
-    }
-
-    #testimonials h3 {
-        margin    : 0 auto;
-        text-align: left;
-
-    }
-
-    #testimonials>div {
-        max-width            : 1100px;
-        margin               : 0 auto;
-        display              : grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap                  : 2rem 2.5rem;
-        align-items          : start;
-        text-align           : center;
-    }
-
-    #testimonials>div>section {
-        display      : grid;
-        justify-items: center;
-        gap          : .5rem;
-    }
-
-    #testimonials>div>section img {
-        width        : 120px;
-        height       : 120px;
-        border-radius: 50%;
-        object-fit   : cover;
-        border       : 4px solid #fff;
-        box-shadow   : 0 2px 0 rgba(0, 0, 0, .06);
-        margin-bottom: .25rem;
-    }
-
-    #testimonials>div>section h4 {
-        font-size     : 1.05rem;
-        text-transform: uppercase;
-        letter-spacing: .06em;
-        font-weight   : 700;
-    }
-
-    #testimonials>div>section p {
-        font-size  : .9rem;
-        font-weight: 400;
-        color      : var(--black);
-    }
-
-    #testimonials q {
-        font-size  : .95rem;
-        line-height: 1.5;
-        color      : #333;
-        max-width  : 34ch;
-    }
-
-    #about {
-        background : var(--blue);
-        width      : 100vw;
-        margin-left: 50%;
-        transform  : translateX(-50%);
-        padding    : 2.25rem 1.5rem 2.75rem;
-    }
-
-    #about>div {
-        max-width            : 1200px;
-        margin               : 0 auto;
-        display              : grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap                  : 2rem 3rem;
-        padding              : 1.25rem 0;
-        text-align           : center;
-    }
-
-    #about img {
-        width        : 96px;
-        height       : 96px;
-        margin-bottom: .75rem;
-    }
-
-    #about h4 {
-        font-size: .95rem;
-    }
-
-
-    #about p {
-        font-size: .9rem;
-    }
-
-
-    /* CONTACT */
-
-    form {
-        max-width            : 100%;
-        margin               : 0 auto;
-        display              : grid;
-        grid-template-columns: repeat(6, 1fr);
-        column-gap           : 1.5rem;
-        row-gap              : 1rem;
-        align-items          : start;
     }
 
     #names {
-        grid-column: 1 / 3;
-
+        grid-column: 1/2;
     }
 
-    #nums {
-        grid-column: 3 / 5;
-
+    input[type=submit] {
+        width: 94%;
     }
 
+    #about div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    footer {
+        display              : grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items          : center;
+    }
+
+    footer a {
+        padding: 1rem 0;
+    }
+}
+
+/* ---------- MEDIUM SCREEN STYLES WITH NAV CHANGE ---------- */
+@media screen and (min-width: 670px) {
+    header {
+        padding    : 1rem 1rem 2rem 1rem;
+        width      : calc(100% - 2rem);
+        align-items: center;
+    }
+
+    #logo {
+        grid-row: 1/3;
+    }
+
+    #logo img {
+        width    : 100%;
+        max-width: 180px;
+        margin   : 0 auto;
+    }
+
+    h1 {
+        grid-row  : 1/2;
+        align-self: end;
+        margin-top: 1.5rem;
+    }
+
+    h1,
+    header p {
+        grid-column: 2/-1;
+    }
+
+    header p {
+        align-self: start;
+    }
+
+    #toggle,
+    #menu-toggle label,
+    #menu-toggle input {
+        display: none;
+    }
+
+    nav {
+        margin: 0 0 1rem 0;
+    }
+
+    nav,
+    #menu-toggle,
+    nav ul {
+        grid-column     : 1/-1;
+        grid-row        : auto;
+        width           : 100%;
+        max-width       : 950px;
+        margin          : 0 auto;
+        background-color: transparent;
+    }
+
+    nav ul {
+        position             : static;
+        margin               : 0;
+        padding              : 0;
+        width                : 100%;
+        display              : grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap                  : 1rem;
+    }
+
+    nav li {
+        border-bottom   : none;
+        background-color: var(--white);
+    }
+
+    nav a {
+        padding: 1rem;
+    }
+
+    .active {
+        background-color: var(--yellow);
+    }
+}
+
+/* ---------- LARGE SCREEN STYLES ---------- */
+@media screen and (min-width: 1000px) {
+
+    #intro {
+        display              : grid;
+        grid-template-columns: 350px 1fr;
+        -moz-column-gap      : 1rem;
+        column-gap           : 1rem;
+        padding              : 1rem;
+    }
+
+    #img-grid {
+        width        : 100%;
+        max-width    : 948px;
+        padding      : 0;
+        margin-bottom: 2rem;
+    }
+
+    #intro h2,
+    #intro p {
+        grid-column: 1/2;
+        padding    : 1rem 1rem 0 0;
+    }
+
+    #plan,
+    #testimonials,
+    #about,
+    #contact {
+        grid-column: 1/-1;
+    }
+
+    #plan div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width            : 1500px;
+    }
+
+    #plan section {
+        padding: 1rem;
+        width  : calc(100% - 2rem);
+    }
+
+    #plan h4 {
+        margin-bottom: 1rem;
+    }
+
+    #testimonials div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width            : 1500px;
+        margin               : 0 auto;
+    }
+
+    form {
+        display              : grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap                  : 1rem;
+        width                : 100%;
+        max-width            : 1500px;
+    }
+
+    input[type=submit] {
+        width   : 50%;
+        margin  : 2rem 0 0 25%;
+        position: relative;
+        right   : -23%;
+    }
+
+    #names,
+    #nums,
     #selects {
-        grid-column: 5 / 7;
+        width    : 100%;
+        max-width: 100%;
+        display  : block;
+    }
+}
 
+@media screen and (min-width: 1200px) {
+    header {
+        grid-template-columns: 1fr 2fr 3fr;
+        padding              : 0 0 1rem 1rem;
+        margin               : 0;
+        width                : calc(100% - 1rem);
     }
 
-    #names input,
-    #nums input .custom-select {
-        width: 100%;
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2,
+    h3 {
+        font-size: 2.25rem;
+    }
+
+    nav {
+        grid-column: 3/4;
+        grid-row   : 1/2;
+        margin     : -1.75rem 0 0 0;
+    }
+
+    nav a {
+        padding: 1rem 0.5rem;
+    }
+
+    #intro {
+        grid-template-columns: 500px 1fr;
+        gap                  : 0;
+        width                : calc(100% - 2rem);
+        max-width            : 1500px;
+        margin               : 0 auto;
+    }
+
+    #about div {
+        max-width: 800px;
+        margin   : 0 auto;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    h3 {
+        margin-left: 5%;
     }
 }
